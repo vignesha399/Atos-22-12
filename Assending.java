@@ -20,6 +20,6 @@ class Assending{
         stack.add(78);
         stack.forEach(e -> System.out.println(e));
         System.out.println(stack.size());
-        System.out.println(stack.get(1));
+        System.out.println(stack.get(0));
     }
 }
