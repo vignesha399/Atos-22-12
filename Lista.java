@@ -7,7 +7,7 @@ public class Lista {
         list.add("value no 1");
         list.add("array value");
         System.out.println(list);
-        list.forEach(System.out::println);mas
+        list.forEach(System.out::println);
     }
     
 }
