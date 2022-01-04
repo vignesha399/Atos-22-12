@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Main site</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: mediumpurple;
+            text-align: center;
+        }
+        a:focus{
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="nav  justify-content-center" style="background-color: paleturquoise;">
+        <ul class=" nav nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link text-success aria-active-"page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Sales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="text-light">Our life in Our Hand</h1>
+    <!--carousel tags-->
+    
+    <div style="width: 100%; height: 80vh;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div style="width: 100%; height: 80vh;" class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="width: 100%; height: 80vh;" src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100%; height: 80vh;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA6xOLhJmOjhQjqHsuCPSL1-_2RCbCve1keg&usqp=CAU" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100%; height: 80vh;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlf5lc5tX-0gY-y94pGS0mQdL-D0lCH2OQ&usqp=CAU" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!--
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousol-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="Atos2.jpg" class="d-block w-100" width="100%"></div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item"><img src="Atos2.jpg" class="d-block w-100" width="100%"></div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item"><img src="Atos3.jpg" class="d-block w-100" width="100%"></div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item"><img src="Atos4.jpg" class="d-block w-100" width="100%"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+-->
+    <div class="row p-5 m-5 align-items-start">
+
+        <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="12.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> <bold><sup>FZ</sup></bold>-25<sub>(250)</sub> </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="https://www.google.com/search?q=fz25+mileage&rlz=1C1CHBF_enIN972IN972&ei=YNzSYZObKt3Zz7sPi-6_kAw&oq=fz25+&gs_lcp=Cgdnd3Mtd2l6EAEYATIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDILCAAQgAQQsQMQgwEyCwgAEIAEELEDEMkDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQRxCwAxDJAzoHCAAQRxCwAzoHCAAQsAMQQ0oFCDwSATFKBAhBGABKBAhGGABQnQhYnQhgljFoAXAAeACAAagBiAGoAZIBAzAuMZgBAKABAcgBCsABAQ&sclient=gws-wiz" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Atos1.jpg" importance="navbar-brand" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> Hitler </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+
+    </div>
+
+    <div class="row p-5 m-5 justify-content-between">
+
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Atos2.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> Climber </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; height:65vh; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Atos3.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> Addiction </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+
+    </div>
+
+    <div class="row p-5 m-5 justify-content-start">
+
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Atos4.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> Veg Role </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Atos5.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> curd Rice </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+
+    </div>
+
+    <div class="row p-5 m-5 justify-content-end">
+
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Atos6.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> Buger </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Chiken.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> Chiken </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+
+    </div>
+    <div class="row p-5 m-5 justify-content-center">
+
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="WhiteRice.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> WhiteRice </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+        <div class="card btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+            <div class="card-image-top" alt="image"><img src="Kaliya.jpg" width="100%"></div>
+            <div class="card-body" >
+                <h4 class="card-title"> Kaliya </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+        </div>
+
+    </div>
+    <div class=" container ">
+        <div class="row p-5 m-5 justify-content-evenly border">
+            <div class="card m-3 btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+                <div class="card-image-top" alt="image"><img src="tomjerry.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> ShinChan | Tom&Jerry </h4>
+                    <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                </div>
+                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+            </div>
+            <div class="card m-3 btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+                <div class="card-image-top" alt="image"><img src="table.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> Table </h4>
+                    <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                </div>
+                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+            </div>
+
+            <div class="card m-3 btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+                <div class="card-image-top" alt="image"><img src="leaves.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> Leaves </h4>
+                    <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                </div>
+                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+            </div>
+            <div class="card m-3  btn btn-success text-light bg-secondary" style="width:20rem; text-align: center;">
+                <div class="card-image-top" alt="image"><img src="fall.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> Fall </h4>
+                    <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                </div>
+                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+            </div>
+        </div>  
+    </div>
+</body>
+<footer>
+    <div class="bg-info">
+        <h1 class=" "><kbd>Welcome to Our Page</kbd> </h1>
+        <p><ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Home   |</a>
+            </li><li></li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Sales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success aria-current-"page" href="#">Contact</a>
+            </li>
+        </ul></p>
+    </div>
+</footer>
+</html>
