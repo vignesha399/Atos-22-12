@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!--online links end-->
-    <title>Cart Page  </title>
+    <title>Cart Page</title>
     <style>
         body{
             background-color: violet;
@@ -25,14 +25,23 @@
 <body>
     <header>
         <div class="navbar bg-body fa-border">
-            <div class="navbar-brand">Shoppie</div>
+            <div class="navbar-brand"><a href="Shoppie.html">Shoppie</a></div>
             <div>
                 <ul class="nav" id="myUL">
+                    <li class="nav-link justify-content-center">
+                        <a href="TodaysDeal.html">Today's Deals</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Cart.html">Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Orders.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignUp.html">SingUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
                     </li>
                     <li class="nav-item align-self-center ">
                         <input id="myInput" type="text" style="width:150px;  height: 30px; padding: 10px;" placeholder="Search...."> <i class="fas fa-search fa-sm fa-fw "></i>
@@ -41,9 +50,11 @@
                         <div class="dropdown dropstart">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i></button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/Atos/Products.html">View Profile</a></li>
-                              <li><a class="dropdown-item" href="/Atos/Sales.html">View Orders</a></li>
-                              <li><a class="dropdown-item" href="/Atos/Logout.html">Logout</a></li>
+                              <li><a class="dropdown-item" href="ViewProfile.html">View Profile</a></li>
+                              <li><a class="dropdown-item" href="Orders.html">View Orders</a></li>
+                              <hr style="color:black" >
+                              <li><a class="dropdown-item" href="Settings.html">Settings</a></li>
+                              <li><a class="dropdown-item" href="Logout.html">Logout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -51,6 +62,204 @@
             </div>
         </div>
     </header>
-    <h1>Welcome to our page</h1>
+    <p class="nav-link text-light">Shoppie <code>></code> Cart</p>
+    <section>
+      <div class="d-grid gap-2 col-6 mx-auto m-5 sticky-top">
+        <button class="btn btn-success m-2" type="button"><a style="text-decoration: none; color: wheat;" href="Buy.html">Buy now</a> </button>
+      </div>
+      <!-- Cards Section -->
+      <div class="row m-2">
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Clearance/May21/V238940049_IN_PC_BAU_Edit_Creation_Laptops1x._SY304_CB667377205_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">DESKTOP ASSOSORIES</h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+            </div>
+            <a href="#" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://m.media-amazon.com/images/I/31NmWpDfMZL._AC_SY200_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> PTRON </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/61PGb+YfZWL._AC_UL160_SR160,160_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> Narzo </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/61JCeQFCboL._AC_UL160_SR160,160_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> Sony  </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+              <img src="https://m.media-amazon.com/images/G/31/kindle/journeys/eyDtXktMqw2Bzc0EbZnPPUBfQY4I9fyaxFgbKnkCwjLU3D/ZDAxNTU4M2Et._CB670405788_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">Every day is an earth day</h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+            </div>
+            <a href="#" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://m.media-amazon.com/images/G/31/kindle/journeys/eyDtXktMqw2Bzc0EbZnPPUBfQY4I9fyaxFgbKnkCwjLU3D/ZDAxNTU4M2Et._CB670405788_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> PLUG IN FOR TV </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/51BZtHv0VBL._AC_SX184_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">Onida 80 cm (32 inches) HD Ready Smart LED Fire TV </h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="#" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/41oe4WuOZiL._AC_SX184_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> AmazonBasics 139cm (55 inch) </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/51KuQSReXLL._AC_SX184_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">Surf Excel </h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="#" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/HPC/CatPage/SBC-3.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> FAMILY NUTRITION </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Clearance/May21/V238940049_IN_PC_BAU_Edit_Creation_Laptops1x._SY304_CB667377205_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">DESKTOP ASSOSORIES</h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="#" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://m.media-amazon.com/images/I/31NmWpDfMZL._AC_SY200_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> PTRON </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Clearance/May21/V238940049_IN_PC_BAU_Edit_Creation_Laptops1x._SY304_CB667377205_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">DESKTOP ASSOSORIES</h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="#" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://m.media-amazon.com/images/I/31NmWpDfMZL._AC_SY200_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> PTRON </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-info  text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+                <img src="https://m.media-amazon.com/images/I/61+5+QRoTVL._SL1479_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">DESKTOP ASSOSORIES</h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="#" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+        <div class="card container-fluid btn btn-success  text-dark bg- light" style="width:15rem;">
+            <div class="card-image-top" alt="image">
+              <img src="https://m.media-amazon.com/images/I/31NmWpDfMZL._AC_SY200_.jpg" importance="navbar-brand" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title"> PTRON </h4>
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                 
+            </div>
+            <a href="" targer="blank"><button class="btn btn-primary">Add More</button> <button class="btn btn-danger">Delete Item</button></a>
+        </div>
+    </div>
+  </section>
+  <footer style="background-color: rgb(142, 218, 218);">
+    <h1 style="text-align: center;" class=""><kbd>Welcome to Our Page</kbd> </h1>
+<div class="row container-fluid justify-content-between p-5  text-dark border">
+    <div style=" width: 20rem; height: 20px; ">
+        <div class="card-title justify-content-center"><i class="fa-fa-bootstrap"><h5>Shoppie</h5></i></div>
+        <div class=" justify-content-end">
+            <p>Here we are use bootstrap only litiraly we used css also.</p>
+        </div>
+    </div>
+    <div style=" width: 20rem;  border: none;">
+        <div class="card-title"><h5>Community</h5></div>
+        <ul class="d-flex p-1">
+            <li class="nav-link"> <a href="Settings.html">settings</a> </li>
+            <li class="nav-link"> <a href="/Contact.html">contacts</a> </li>
+            <li class="nav-link"><a href="/Service.html">Services</a></li>
+        </ul>
+    </div>
+</div>
+</footer>
 </body>
 </html>

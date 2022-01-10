@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--online links start-->
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <!-- font awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!--online links end-->
+    <title>links</title>
+    <style>
+        body{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar bg-body fa-border">
+            <div class="navbar-brand"><a href="Shoppie.html">Shoppie</a></div>
+            <div>
+                <ul class="nav" id="myUL">
+                    <li class="nav-link justify-content-center">
+                        <a href="TodaysDeal.html">Today's Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Orders.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignUp.html">SingUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item align-self-center ">
+                        <input id="myInput" type="text" style="width:150px;  height: 30px; padding: 10px;" placeholder="Search...."> <i class="fas fa-search fa-sm fa-fw "></i>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="dropdown dropstart">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i></button>
+                            <ul class="dropdown-menu">
+                              
+                              <li><a class="dropdown-item" href="ViewProfile.html">View Profile</a></li>
+                              <li><a class="dropdown-item" href="Orders.html">View Orders</a></li>
+                              <hr style="color:black" >
+                              <li><a class="dropdown-item" href="Settings.html">Settings</a></li>
+                              <li><a class="dropdown-item" href="Logout.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<section>
+    <p class="nav-link text-light">Shoppie <code>></code> More items</p>
+<div  style="display: flex; width: 100%; margin: 2%; overflow: scroll;" >
+    <!-- <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 10
+            0%;
+            width: 100%;
+            }
+        .cardgroup:hover div,p button > :nth-child(even){
+            zoom: 150%;
+            width: 20%;
+            z-index: 1;
+            background-color: rgba(14, 13, 13, 0.6);
+            color: black;
+        }
+        .cardgroup:hover > :nth-child(odd){
+            width: 20%;
+            z-index: 1;
+        }
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style> -->
+    <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+            }
+        .cardgroup:hover div,p button > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+            background-color: rgb(7, 7, 7);
+            color: rgb(255, 253, 253);
+        }
+        .cardgroup:hover div,p button > :nth-child(even){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+        }
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/k6l2vm80/acoustic-guitar/q/z/y/38c-classic-brown-38-flipkart-smartbuy-original-imafpyh2qgay7mhj.jpeg?q=70" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">Flipkart SmartBuy 38C Classic brown</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/jwwffrk0/gown/z/r/u/15-free-trilok-red-gown-01-sixteencreation-64-original-imafgy539cbxyabh.jpeg?q=50" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">Sixteen Creation
+                Embroidered Semi </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/kazor680/bath-towel/w/w/y/100-cotton-king-size-bath-towels-set-of-2pcs-bath-towel-3-vel-original-imafsfwfxmyzhw8u.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">VEL Cotton 200 GSM Bath Towel Set</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/keuagsw0-0/helmet/b/o/l/sbh-17-terminator-full-face-graphic-helmet-in-matt-black-fluo-original-imafvfnfyupkvbh7.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">Steelbird SBH-17 Terminator Full Face Graphic </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/kjrh2fk0/car-kit/car-bluetooth-converter/w/2/d/por-1195-auto-12-portronics-original-imafz9gcf5qhmgyn.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Portronics v5.0 Bluetooth Device with Transmitter,r</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/k6ci8i80/backpack/e/z/m/hop9990-299902-laptop-backpack-hp-original-imafcgzxcykzz4eu.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/ke1pnrk0/bag/e/f/z/olsk011-ol-skool-30-original-imafute2txpdskjz.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+ 
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+<div  style="display: flex; width: 100%; margin: 2%;" >
+    <!-- <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+        }
+        /* .cardgroup:hover div,p > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            float: left;
+            left: 10%;
+            background-color: rgb(128, 128, 128,.6);
+            float: left;
+        } */
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style>
+     -->
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/200/200/kn3i1zk0/casserole/k/e/p/cassrole-3-5l-the-wants-original-imagfuynvtjwspkk.jpeg?q=70" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">cook and serve casseroles</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/ktizdzk0/bed-mattress/m/g/9/normal-top-queen-5-60-72-dual-medium-soft-hard-high-density-hd-original-imag6uxhzskahp7s.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">SleepX Dual Medium Soft & Hard</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/kidgnm80-0/key-chain/z/s/n/rotating-captain-america-shield-keyrings-keychains-key-chain-original-imafy6ty8ankpght.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">eweft Rotating Captain America Shield</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/jumzc7k0/key-chain/y/j/m/pu-leather-car-key-wallets-men-key-holder-keys-organizer-covers-original-imafeywtprekf5v8.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">DALUCI PU Leather</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kwb07m80/watch/a/v/e/2-magnet-strap-girls-women-4-point-369-rishtey-black-21st-original-imag9y8hmmepa9cp.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                New Arrival </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+            </p>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kcz4rrk0/watch/j/x/y/blue-sports-design-foxter-original-imaftzjrqb8e6dvn.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                Chronograph Design</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+<div  style="display: flex; width: 100%; margin: 2%; overflow: scroll;" >
+    <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+            }
+        .cardgroup:hover div,p button > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+            background-color: rgb(7, 7, 7);
+            color: rgb(255, 253, 253);
+        }
+        .cardgroup:hover div,p button > :nth-child(even){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+        }
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/khxqt8w0/vehicle-lubricant/y/2/8/1-5100-motul-original-imafxudzzyawkzau.jpeg?q=70" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">MOTUL 5100 15W-50 Technosynthese Ester Synthetic</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/khmbafk0-0/helmet/o/t/r/sbh-17-terminator-full-face-graphic-helmet-in-glossy-fluo-neon-original-imafxhehqfpzh6hg.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">Steelbird SBH-17 Terminator Full Face Graphic Helmet</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/jzzvs7k0/two-wheeler-cover/u/y/p/superior-quality-safety-cover-1961-splendor-plus-flipkart-original-imafjp6kmwvp54m4.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">Bull Rider Two Wheeler Cover for Hero</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/k0sgl8w0/arm-sleeve/j/7/q/free-arm-sleeve-with-thumb-hole-m-mod-con-original-imafgygq4wucbxxg.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">GADGET DEALS Nylon Arm Sleeve For Men & Women
+                GADGET DEALS Nylon Arm Sleeve For Men & Women</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/ko0d6kw0/car-charger/car-charger/e/6/1/cargenius-car-charger-xf-3-bergmann-original-imag2ka6dts47mcz.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Bergmann 4.8 Amp Turbo Car Charger</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/kp036vk0/car-pressure-washer/y/x/e/water-spray-gun-with-brass-head-metal-trigger-for-car-bike-wash-original-imag3bqygqz5uttj.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Flipkart SmartBuy Water Spray Gun With Brass Head</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/ke1pnrk0/bag/e/f/z/olsk011-ol-skool-30-original-imafute2txpdskjz.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+ 
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+<div  style="display: flex; width: 100%; margin: 2%;" >
+    <!-- <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+        }
+        /* .cardgroup:hover div,p > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            float: left;
+            left: 10%;
+            background-color: rgb(128, 128, 128,.6);
+            float: left;
+        } */
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style>
+     -->
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/200/200/kn3i1zk0/casserole/k/e/p/cassrole-3-5l-the-wants-original-imagfuynvtjwspkk.jpeg?q=70" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">cook and serve casseroles</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/ktizdzk0/bed-mattress/m/g/9/normal-top-queen-5-60-72-dual-medium-soft-hard-high-density-hd-original-imag6uxhzskahp7s.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">SleepX Dual Medium Soft & Hard</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/kidgnm80-0/key-chain/z/s/n/rotating-captain-america-shield-keyrings-keychains-key-chain-original-imafy6ty8ankpght.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">eweft Rotating Captain America Shield</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/jumzc7k0/key-chain/y/j/m/pu-leather-car-key-wallets-men-key-holder-keys-organizer-covers-original-imafeywtprekf5v8.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">DALUCI PU Leather</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kwb07m80/watch/a/v/e/2-magnet-strap-girls-women-4-point-369-rishtey-black-21st-original-imag9y8hmmepa9cp.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                New Arrival </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+            
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kcz4rrk0/watch/j/x/y/blue-sports-design-foxter-original-imaftzjrqb8e6dvn.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                Chronograph Design</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+            
+        </div>
+    </div>
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+<div  style="display: flex; width: 100%; margin: 2%; overflow: scroll;" >
+    <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+            }
+        .cardgroup:hover div,p button > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+            background-color: rgb(7, 7, 7);
+            color: rgb(255, 253, 253);
+        }
+        .cardgroup:hover div,p button > :nth-child(even){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+        }
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kfr5le80/bag/n/h/x/red-32-ltrs-casual-bagpack-school-bag-laptop-backpack-proera-32-original-imafw54z7xncemm9.jpeg?q=50" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/k6nxrbk0/backpack/r/6/h/khadi-textured-hi-storage-khadi-textured-laptop-backpack-original-imafp3fprszq79kg.jpeg?q=50" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kg9qbgw0/backpack/f/s/w/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-black-original-imafwjxdgxynfwqt.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/ked56kw0/sweet-mithai/n/s/x/1000-rasgulla-rasgulla-lalji-original-imafv2khw8hpazrw.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">Lalji Sponge Rasogolla</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/k6ci8i80/backpack/e/z/m/hop9990-299902-laptop-backpack-hp-original-imafcgzxcykzz4eu.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/ke1pnrk0/bag/e/f/z/olsk011-ol-skool-30-original-imafute2txpdskjz.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+ 
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+<div  style="display: flex; width: 100%; margin: 2%;" >
+    <!-- <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+        }
+        /* .cardgroup:hover div,p > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            float: left;
+            left: 10%;
+            background-color: rgb(128, 128, 128,.6);
+            float: left;
+        } */
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style>
+     -->
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/200/200/kn3i1zk0/casserole/k/e/p/cassrole-3-5l-the-wants-original-imagfuynvtjwspkk.jpeg?q=7" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">cook and serve casseroles</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/ktizdzk0/bed-mattress/m/g/9/normal-top-queen-5-60-72-dual-medium-soft-hard-high-density-hd-original-imag6uxhzskahp7s.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">SleepX Dual Medium Soft & Hard</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/kidgnm80-0/key-chain/z/s/n/rotating-captain-america-shield-keyrings-keychains-key-chain-original-imafy6ty8ankpght.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">eweft Rotating Captain America Shield</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/jumzc7k0/key-chain/y/j/m/pu-leather-car-key-wallets-men-key-holder-keys-organizer-covers-original-imafeywtprekf5v8.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">DALUCI PU Leather</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kwb07m80/watch/a/v/e/2-magnet-strap-girls-women-4-point-369-rishtey-black-21st-original-imag9y8hmmepa9cp.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                New Arrival </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+            
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kcz4rrk0/watch/j/x/y/blue-sports-design-foxter-original-imaftzjrqb8e6dvn.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                Chronograph Design</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+            
+        </div>
+    </div>
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+<div  style="display: flex; width: 100%; margin: 2%; overflow: scroll;" >
+    <!-- <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+            }
+        .cardgroup:hover div,p button > :nth-child(even){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+            background-color: rgba(14, 13, 13, 0.6);
+            color: black;
+        }
+        .cardgroup:hover > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            z-index: 1;
+        }
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style> -->
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kfr5le80/bag/n/h/x/red-32-ltrs-casual-bagpack-school-bag-laptop-backpack-proera-32-original-imafw54z7xncemm9.jpeg?q=50" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/k6nxrbk0/backpack/r/6/h/khadi-textured-hi-storage-khadi-textured-laptop-backpack-original-imafp3fprszq79kg.jpeg?q=50" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kg9qbgw0/backpack/f/s/w/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-black-original-imafwjxdgxynfwqt.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/k6nxrbk0/backpack/r/6/h/khadi-textured-hi-storage-khadi-textured-laptop-backpack-original-imafp3fprszq79kg.jpeg?q=50" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/k6ci8i80/backpack/e/z/m/hop9990-299902-laptop-backpack-hp-original-imafcgzxcykzz4eu.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/ke1pnrk0/bag/e/f/z/olsk011-ol-skool-30-original-imafute2txpdskjz.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">Large 35 L </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+ 
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+<div  style="display: flex; width: 100%; margin: 2%;" >
+    <!-- <style>
+        .cardgroup{
+            background-color: whitesmoke;
+            display: block;
+            overflow-y: hidden;
+        }
+        .cardgroup img{
+            padding: 2px;
+            height: 80%;
+            width: 100%;
+        }
+        /* .cardgroup:hover div,p > :nth-child(odd){
+            content: "";
+            zoom: 150%;
+            position: absolute;
+            width: 20%;
+            float: left;
+            left: 10%;
+            background-color: rgb(128, 128, 128,.6);
+            float: left;
+        } */
+        .cardgroup sup,sub,del{
+            padding: .5%;
+            color: chocolate;
+        }
+    </style>
+     -->
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/200/200/kn3i1zk0/casserole/k/e/p/cassrole-3-5l-the-wants-original-imagfuynvtjwspkk.jpeg?q=70" width="100%" alt="laptop">
+        <div>
+            <h6 style="padding: 2ox;">cook and serve casseroles</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/ktizdzk0/bed-mattress/m/g/9/normal-top-queen-5-60-72-dual-medium-soft-hard-high-density-hd-original-imag6uxhzskahp7s.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">SleepX Dual Medium Soft & Hard</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/kidgnm80-0/key-chain/z/s/n/rotating-captain-america-shield-keyrings-keychains-key-chain-original-imafy6ty8ankpght.jpeg?q=70" width="100%" alt="PROVOGUE
+    Large 35 L Laptop">
+        <div>
+            <h6 style="padding: 2px;">eweft Rotating Captain America Shield</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/612/612/jumzc7k0/key-chain/y/j/m/pu-leather-car-key-wallets-men-key-holder-keys-organizer-covers-original-imafeywtprekf5v8.jpeg?q=70" width="100%" alt="METRONAUT
+    Medium 30 L Laptop">
+        <div>
+            <h6 style="padding: 2ox;">DALUCI PU Leather</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+        </div>
+    </div>
+    
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kwb07m80/watch/a/v/e/2-magnet-strap-girls-women-4-point-369-rishtey-black-21st-original-imag9y8hmmepa9cp.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                New Arrival </h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+            
+        </div>
+    </div>
+    <div class="cardgroup" >
+        <img src="https://rukminim1.flixcart.com/image/495/594/kcz4rrk0/watch/j/x/y/blue-sports-design-foxter-original-imaftzjrqb8e6dvn.jpeg?q=50" width="100%" alt="PROVOGUE
+    Large 35 L Laptop ">
+        <div>
+            <h6 style="padding: 2ox;">FOXTER
+                Chronograph Design</h6>
+            <p style="padding: 2px;"> (Black, Grey) Special price</p>
+               
+                <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+            
+        </div>
+    </div>
+    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+</div>
+</section>
+<footer style="background-color: rgb(61, 90, 90);">
+<h1 style="text-align: center;" class=""><kbd>Welcome to Our Page</kbd> </h1>
+<div class="row container-fluid justify-content-between p-2  text-dark border">
+    <div style=" width: 20rem; ">
+        <div class="card-title justify-content-center"><i class="fa-fa-bootstrap"><h5>Shoppie</h5></i></div>
+        <div class=" justify-content-end">
+            <p>Here we are use bootstrap only litiraly we used css also.</p>
+        </div>
+    </div>
+    <div style=" width: 20rem;  border: none;">
+        <div class="card-title"><h5>Community</h5></div>
+        <ul class="d-flex p-1">
+            <li class="nav-link"> <a href="Settings.html">settings</a> </li>
+            <li class="nav-link"> <a href="/Contact.html">contacts</a> </li>
+            <li class="nav-link"><a href="/Service.html">Services</a></li>
+        </ul>
+    </div>
+</div>
+</footer>
+</body>
+
+</html>

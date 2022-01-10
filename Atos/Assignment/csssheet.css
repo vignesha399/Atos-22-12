@@ -1,0 +1,90 @@
+/* some styles is include internal stylesheet */
+*{ margin: 0%; padding: 0%; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;}
+body{ background-color:rgb(148, 219, 139); }
+form{ text-align: center; background: lightgreen; font-family: 'Times New Roman', Times, serif; font-size: xx-large; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black;}
+form > fieldset > a{float:right; font-size: 50%; text-decoration: none;}
+form > fieldset > a:hover{float:right; font-size: 50%; text-decoration: underline;}
+.span{background-color: yellowgreen;align-items: center; position: relative;}
+h1{ color: chocolate; margin: .5%; text-align: center; background-color:rgb(209, 179, 172) }
+.aside{text-align: center; background-color: rgb(199, 186, 186); float: left; position: absolute; min-width: 100%; margin: .5% 3px .5% 2px;  padding: 0px 10px; opacity: 1%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.dialogue{ text-align: center; font-size: 200%;}
+.dialogue1{color: rgba(28, 83, 28, 0.993);}
+.buttondiv{margin: 2%;}
+.buttondiv , button a{text-align: center; padding: 2px; color: blueviolet;}
+button{width: 20%; padding: 1%; background-color: rgb(128, 128, 151); border-radius: 10px;}
+button a{color: white; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none; font-size: 100%;}
+.imgdiv{flex: 30%; width: auto;}
+.imgdiv > img{padding: 5px; margin: 1%;}
+h2{ color: rgb(211, 64, 64); text-align: center;}
+.headdd{  background-color: rgb(68, 56, 56); text-align: center;  margin-top:5%; padding: 1%;}
+.footer{ align-items: center;}
+.footer dl dd{ padding: .05%; color: blanchedalmond; }
+.footer dl > dt{ text-decoration: underline;}
+/* for mobile media */
+@media (max-width:768px){
+    [class*="nav"] {
+        visibility: hidden; /*width is mandorary for mobile nav */ width: 0%; position: absolute; 
+    }
+    [class*="navm"] {
+        visibility: visible;  min-width: 100%;
+    }
+}
+.navm ul li ul { position: absolute; display: block; width: 100%; visibility: hidden; }
+.navm ul li ul li{ border-bottom: 1px solid rgb(63, 50, 50); color: black; }
+.navm ul li:hover ul li{ visibility: visible; background-color:rgb(190, 235, 88); z-index: 1; }
+.navm ul li a{ color: black; text-shadow: -2px -2px 3px coral; text-decoration: none; }
+.navm ul li{ list-style-type: none;  border-left: 1px solid black; width: 100%; position: relative;  padding: 10px; }
+.navm ul li:hover{ background-color: rgb(71, 69, 69);  color: whitesmoke; }
+.navm ul{ text-align: center; display: flex; margin: 2px; justify-content: space-between; background-color: lightgreen;}
+.active{
+    background-color: black;
+}
+/* for desktop media */
+@media (min-width:769px){
+    [class*="navm"] {
+        visibility: hidden; position: absolute; width: 0%; top: -20%;
+    }
+    [class*="nav"] {
+        visibility: visible;
+    }
+}
+.nav ul li ul { position: absolute; display: block; width: 100%; visibility: hidden; }
+.nav ul li ul li{ color: black; }
+.nav ul li:hover ul li{ visibility: visible; background-color:rgb(190, 235, 88); z-index: 1; }
+.nav ul li a{ color: black; text-shadow: -2px -2px 3px coral; text-decoration: none; }
+.nav ul li{ list-style-type: none; border-left: 1px solid black; width: 100%; position: relative;  padding: 10px; }
+.nav ul > li a:hover{ background-color: rgb(165, 94, 94);  color: rgb(154, 194, 136); }
+.nav ul{  text-align: center; display: flex; margin: 2px; justify-content: space-between; }
+@media (min-width:769px){.foodiecontainer{ float: left;}}
+@media (max-width:768px){.foodiecontainer{ display: flex; justify-content: space-around; text-align: center;}}
+.round{
+    width: 70%;
+    height: 2%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    color: white;
+    background-color: blue;
+}
+.round1{
+    
+    border-radius: 25%;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(62, 182, 31);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: round1;
+    animation-duration: 3s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes round1 {
+    0%{position:absolute;left: 0%;}
+    100%{position:absolute;left: 100%;}
+}

@@ -14,6 +14,7 @@
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
     <!--online links end-->
     <title>Shoppie</title>
     <script src="Js.js"></script>
@@ -26,28 +27,38 @@
 <body>
     <header>
         <div class="navbar bg-body fa-border">
-            <div class="navbar-brand">Shoppie</div>
+            <div class="navbar-brand"><a href="Shoppie.html">Shoppie</a></div>
             <div>
                 <ul class="nav" id="myUL">
                     <li class="nav-link justify-content-center">
                         <a href="TodaysDeal.html">Today's Deals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Cart.html">Cart</a>
+                        <a class="nav-link" href="Cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i> Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Orders.html">Orders</a>
+                        <a class="nav-link" href="Orders.html"> <i class="fa fa-first-order" aria-hidden="true"></i> Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignUp.html">SingUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
                     </li>
                     <li class="nav-item align-self-center ">
                         <input id="myInput" type="text" style="width:150px;  height: 30px; padding: 10px;" placeholder="Search...."> <i class="fas fa-search fa-sm fa-fw "></i>
                     </li>
+                    
                     <li class="nav-item">
                         <div class="dropdown dropstart">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i></button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/Atos/Products.html">View Profile</a></li>
-                              <li><a class="dropdown-item" href="/Atos/Sales.html">View Orders</a></li>
-                              <li><a class="dropdown-item" href="/Atos/Contact.html">Logout</a></li>
+                              <li><a class="dropdown-item" href="Anotherpage.html"> More Contents</a></li>
+                              <li><a class="dropdown-item" href="ViewProfile.html">View Profile</a></li>
+                              <li><a class="dropdown-item" href="Orders.html">View Orders</a></li>
+                              <hr style="color:black" >
+                              <li><a class="dropdown-item" href="Settings.html">Settings</a></li>
+                              <li><a class="dropdown-item" href="Logout.html">Logout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -55,145 +66,560 @@
             </div>
         </div>
     </header>
-    <div style="height: 500px;" id="carouselExampleControls" class=" carousel container-fluid mt-3 " data-bs-ride="carousel">
-        <div style="height: auto; width: 100%; margin: auto;" class="carousel-inner container-fluid">
-          <div class="carousel-item active">
-            <img src="iphoneback1.jpg" class="d-block  w-100"  alt="dropdown">
-            <div class="carousel-caption d-none d-md-block"> 
-               <h5> This a Mobile phone </h5>
-               <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="neonbrand1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> 
+    <section>
+        <Style>
+            #ul #li::after{
+    content:"";
+    background-color: white;
+    width:0%;
+    height: 2px;
+    display: block;
+}
+ #ul #li:hover::after{
+    width: 100%;
+    transition: 1s;
+    margin: none;
+}
+            #bar{
+                border: 0px solid rgb(172, 15, 15);
+                background-color: black;
+            }
+            #ul{
+                position: static;
+                height: 50px;
+            }
+            #li{
+                list-style: none;
+                display: inline-flex;
+            }
+            #ul #li a{
+                position: relative;
+                text-decoration: none;
+                padding: 10px;
+                color: aqua;
+                font-size: medium;
+            }
+            #ul #li:hover ul{
+                display: block;
+                z-index: 1;
+                top: 14%;
+                position: fixed;
+            }
+            #ul #li ul li{
+                position: absolute;
+                list-style: none;
+                visibility: hidden;
+            }
+            #ul #li:hover ul li a{
+                color: rgb(8, 8, 8);
+                z-index: 1;
+                width: 100%;
+            }
+            #ul #li:hover ul li a:hover{
+                color: rgb(255, 255, 255);
+                background-color: green;
+                display: block;
+                text-decoration: underline;
+                z-index: 1;
+            }
+            #ul #li:hover ul li{
+                text-align: center;
+                padding: 5px;
+                border-bottom: 1px solid white;
+                background-color: rgba(224, 237, 240, 0.9);
+                visibility: visible;
+                position: relative;
+                right: 50%;
+                display: block;
+            }
+            aside{
+                background-color: white;
+                position: static;
+                flex-flow: column;
+            }
+        </Style>
+        <div id="bar">
+            <ul id="ul">
+                <li id="li"></li>
+                <label style="color: white; font-size: medium;" for="rangeinput"> points (50 to 50,000)
+                <input type="range" name="range" id="rangeinput" min="50" max="50,000" step="number" value=""></label>
+            </li>
+                <li id="li"><a href="#">Electronics</a>
+                    <ul>
+                        <li><a href="#"> Mobiles</a></li>
+                        <li><a href="#">laptop</a></li>
+                        <li><a href="#">earphones</a></li>
+                        <li><a href="#">chager</a></li>
+                        <li><a href="#">headphones</a></li>
+                        <li><a href="#">camera</a></li>
+                        <li><a href="#">powerbank</a></li>
+                        <li><a href="#">Desktop</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">RC cars</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Books</a>
+                    <ul>
+                        <li><a href="#"> College</a></li>
+                        <li><a href="#">Schools</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">Sciene</a></li>
+                        <li><a href="#">Aero</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Programing</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Mens</a>
+                    <ul>
+                        <li><a href="#"> Shoes</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Inner</a></li>
+                        <li><a href="#">caps</a></li>
+                        <li><a href="#">Belt</a></li>
+                        <li><a href="#">Waller</a></li>
+                        <li><a href="#">Chains</a></li>
+                        <li><a href="#">Slippers</a></li>
+                        <li><a href="#">Glasses</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Kids</a>
+                    <ul>
+                        <li><a href="#"> Jeans</a></li>
+                        <li><a href="#">shorts</a></li>
+                        <li><a href="#">Tshirt</a></li>
+                        <li><a href="#">Comboes</a></li>
+                        <li><a href="#">Infant wear</a></li>
+                        <li><a href="#">Dress</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Womens</a>
+                    <ul>
+                        <li><a href="#"> Chudithar</a></li>
+                        <li><a href="#">Sares</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">inners</a></li>
+                        <li><a href="#">Gowns</a></li>
+                        <li><a href="#">camera</a></li>
+                        <li><a href="#">dupatta</a></li>
+                        <li><a href="#">T-shirt</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Gifts</a>
+                    <ul>
+                        <li><a href="#"> toys</a></li>
+                        <li><a href="#">Kichen accessories</a></li>
+                        <li><a href="#">gift sets</a></li>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bracelet</a></li>
+                        <li><a href="#">girlfriend photo frame</a></li>
+                        <li><a href="#">boyfriend photo frame</a></li>
+                        <li><a href="#">neckles</a></li>
+                        <li><a href="#">jimikki</a></li>
+                        <li><a href="#">others</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Grosery</a>
+                    <ul>
+                        <li><a href="#"> Rice</a></li>
+                        <li><a href="#">grams</a></li>
+                        <li><a href="#">pepper</a></li>
+                        <li><a href="#">salt</a></li>
+                        <li><a href="#">oil</a></li>
+                        <li><a href="#">camera</a></li>
+                        <li><a href="#">surfs</a></li>
+                        <li><a href="#">rops</a></li>
+                        <li><a href="#">bars</a></li>
+                        <li><a href="#">others</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Health cares</a>
+                    <ul>
+                        <li><a href="#"> nutrition tablets</a></li>
+                        <li><a href="#">biscuts</a></li>
+                        <li><a href="#">vitamin tablets</a></li>
+                        <li><a href="#">diapers</a></li>
+                        <li><a href="#"> Amino Support </a></li>
+                        <li><a href="#"> Vitamins & Minerals</a></li>
+                        <li><a href="#">familu Nurition</a></li>
+                        <li><a href="#">contact lens</a></li>
+                        <li><a href="#">essentials</a></li>
+                        <li><a href="#">others</a></li>
+                    </ul>
+                </li>
+                <li id="li"><a href="#">Toys</a>
+                    <ul>
+                        <li><a href="#"> RC cars</a></li>
+                        <li><a href="#">soft games</a></li>
+                        <li><a href="#">Puzzle</a></li>
+                        <li><a href="#">Kids games</a></li>
+                        <li><a href="#">Board games</a></li>
+                        <li><a href="#">Gift toys</a></li>
+                        <li><a href="#">Schools supplies</a></li>
+                        <li><a href="#">others</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+        <div style="display: flex; position: fixed; top: 1.5%; left: 10%; z-index: 1;">
+            <label for="search" style="position: -webkit-sticky;"></label>
+            <button type="button" style="height: 30px; text-decoration: none;" class="btn btn-primary"> <a style="color:white; text-decoration: none;" href="Anotherpage.html"> search</a></button>
+            <p id="li"><input type="search" name="bar" id="search" placeholder="Search"></p>
+        </div>
+            <p class="nav-link text-light">Shoppie</p>
+        
+        <div style="height: 500px;" id="carouselExampleControls" class=" carousel container-fluid mt-3 " data-bs-ride="carousel">
+            <div style="height: auto; width: 100%; margin: auto;" class="carousel-inner container-fluid">
+            <div class="carousel-item active">
+                <video class="d-block  w-100" controls>
+                    <source  src="https://avodmp4s3ww-a.akamaihd.net/ww_sin/795d/adc7/bdb7/4d7a-832a-072ee7ca85f0/3ca3cea0-6fb0-45ab-887a-e0a722b0cf32_video_480p_900kbps_audio_aaclc_128kbps.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+                <div class="carousel-caption d-none d-md-block"> 
                 <h5> This a Mobile phone </h5>
                 <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
-             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="nord1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> 
-                <h5> This a Mobile phone </h5>
-                <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
-             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Redmi1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> 
-                <h5> This a Mobile phone </h5>
-                <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
-             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="crossed1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> 
-                <h5> This a Mobile phone </h5>
-                <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
-             </div>
-          </div>
-        </div>
-    
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <div class="row m-2">
-        <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem; ">
-            <div class="card-image-top" alt="image">
-                <div class="card-body" >
-                    <h4 class="card-title">NEON</h4> 
-                    <img src="/Atos/neonbrand.jpg" width="100%"></div>
-                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                </div>
             </div>
-            <a href="#" targer="blank"><button class="btn btn-primary">Learn more</button></a>
-        </div>
-        <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem;">
-            <div class="card-image-top" alt="image">
-                <div class="card-body" >
-                    <h4 class="card-title"> SONY </h4>
-                    <img src="https://m.media-amazon.com/images/I/71+tGw-CD9L._SL1500_.jpg" importance="navbar-brand" width="100%"></div>
-                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            <div class="carousel-item">
+                <img src="https://m.media-amazon.com/images/I/61aUfpZteZL._SX3000_.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"> 
+                    <h5> This a Mobile phone </h5>
+                    <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
+                </div>
             </div>
-            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
-        </div>
-        <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem;">
-            <div class="card-image-top" alt="image">
-                <div class="card-body" >
-                    <h4 class="card-title"> IPHONE </h4>
-                    <img src="/Atos/iphoneback.jpg" importance="navbar-brand" width="100%"></div>
-                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            <div class="carousel-item">
+                <img src="https://m.media-amazon.com/images/I/71kb+pV0lGL._SX3000_.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"> 
+                    <h5> This a Mobile phone </h5>
+                    <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
+                </div>
             </div>
-            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
-        </div>
-        <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem;">
-            <div class="card-image-top" alt="image">
-                <div class="card-body" >
-                    <h4 class="card-title"> OnePlus  </h4>
-                    <img src="https://m.media-amazon.com/images/I/51R4FJdgbMS._SL1500_.jpg" importance="navbar-brand" width="100%"></div>
-                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+            <div class="carousel-item">
+                <img src="https://m.media-amazon.com/images/I/71OAmM1efNL._SX3000_.jpg" class="d-block  w-100"  alt="dropdown">
+                <div class="carousel-caption d-none d-md-block"> 
+                    <h5> This a Mobile phone </h5>
+                    <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
+                </div>
             </div>
-            <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+            <div class="carousel-item">
+                <img src="Redmi1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"> 
+                    <h5> This a Mobile phone </h5>
+                    <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://m.media-amazon.com/images/I/51LVRbVTqvL._SX3000_.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block"> 
+                    <h5> This a Mobile phone </h5>
+                    <p>If you back up your iPhone, iPad or iPod touch, you’ll have a copy of your information to use in case your device is ever replaced, lost or damaged.</p>
+                </div>
+            </div>
+            </div>
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </div>
-    <div class="row p-5 m-1 justify-content-center">
-        <div class="m-1 row">
-            <div class="card btn btn-success m-2 text-light bg-secondary" style="width:17rem; text-align: center;">
-                <div class="card-body" >
-                    <h4 class="card-title"> NEW ECHO DOT </h4>
-                    <div class="card-image-top" alt="image"><img src="https://m.media-amazon.com/images/I/61KIy6gX-CL._SL1000_.jpg" width="100%"></div>
+        <!-- cards section -->
+        <div class="row m-2">
+            <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem; ">
+                <div class="card-image-top" alt="image">
+                    <div class="card-body" >
+                        <h4 class="card-title">NEON</h4> 
+                        <img src="https://m.media-amazon.com/images/I/71mCphsCGZL._SL1200_.jpg" width="100%"></div>
                     <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">New</span>
                 </div>
-                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+                <a href="#" targer="blank"><button class="btn btn-primary">Add Cart</button></a>
             </div>
-            <div class="card btn btn-success m-2 text-light bg-secondary" style="width:17rem; text-align: center;">
-                <div class="card-body" >
-                    <h4 class="card-title"> curd Rice </h4>
-                    <div class="card-image-top" alt="image"><img src="/Atos/Atos5.jpg" width="100%"></div>
+            <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem;">
+                <div class="card-image-top" alt="image">
+                    <div class="card-body" >
+                        <h4 class="card-title"> SONY </h4>
+                        <img src="https://m.media-amazon.com/images/I/71+tGw-CD9L._SL1500_.jpg" importance="navbar-brand" width="100%"></div>
                     <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">New</span>
                 </div>
-                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+                <a href="" targer="blank"><button class="btn btn-primary">Add Cart</button></a>
             </div>
-    <!-- </div>
-    <div class="row p-5 m-5 justify-content-end"> -->
-            <div class="card btn btn-success m-2 text-light bg-secondary" style="width:18rem; text-align: center;">
-                <div class="card-body" >
-                    <h4 class="card-title"> Buger </h4>
-                    <div class="card-image-top" alt="image"><img src="/Atos/Atos6.jpg" width="100%"></div>
+            <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem;">
+                <div class="card-image-top" alt="image">
+                    <div class="card-body" >
+                        <h4 class="card-title"> THEMISTO  </h4>
+                        <img src="https://m.media-amazon.com/images/I/71z77imSIZL._SL1500_.jpg" alt="iphone" importance="navbar-brand" width="100%"></div>
                     <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">New</span>
                 </div>
-                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+                <a href="" targer="blank"><button class="btn btn-primary">Add Cart</button></a>
             </div>
-            <div class="card btn btn-success m-2 text-light bg-secondary" style="width:18rem; text-align: center;">
-                <div class="card-body" >
-                    <h4 class="card-title"> Chiken </h4>
-                    <div class="card-image-top" alt="image"><img src="/Atos/Chiken.jpg" width="100%"></div>
+            <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem;">
+                <div class="card-image-top" alt="image">
+                    <div class="card-body" >
+                        <h4 class="card-title"> OnePlus  </h4>
+                        <img src="https://m.media-amazon.com/images/I/51R4FJdgbMS._SL1500_.jpg" importance="navbar-brand" width="100%"></div>
                     <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">Future</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">New</span>
                 </div>
-                <a href="" targer="blank"><button class="btn btn-primary">Learn more</button></a>
+                <a href="" targer="blank"><button class="btn btn-primary">Add Cart</button></a>
+            </div>
+            <div class="card container-fluid btn btn-success text-light bg-secondary" style="width:15rem;">
+                <div class="card-image-top" alt="image">
+                    <div class="card-body" >
+                        <h4 class="card-title"> SONY </h4>
+                        <img src="https://m.media-amazon.com/images/I/71+tGw-CD9L._SL1500_.jpg" importance="navbar-brand" width="100%"></div>
+                    <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">New</span>
+                </div>
+                <a href="" targer="blank"><button class="btn btn-primary">Add Cart</button></a>
             </div>
         </div>
-    </div>
+        <div  style="display: flex; width: 100%; margin: 2%; overflow: scroll;" >
+            <style>
+                .cardgroup{
+                    background-color: whitesmoke;
+                    display: block;
+                    overflow-y: hidden;
+                }
+                .cardgroup img{
+                    padding: 2px;
+                    height: 80%;
+                    width: 100%;
+                    }
+                .cardgroup:hover div,p button > :nth-child(odd){
+                    content: "";
+                    zoom: 150%;
+                    position: absolute;
+                    width: 20%;
+                    z-index: 1;
+                    border: 1px;
+                    border-radius: 5%;
+                    background-color: rgb(7, 7, 7);
+                    color: rgb(255, 253, 253);
+                }
+                .cardgroup:hover div,p button > :nth-child(even){
+                    content: "";
+                    zoom: 150%;
+                    position: absolute;
+                    width: 20%;
+                    z-index: 1;
+                }
+                .cardgroup sup,sub,del{
+                    padding: .5%;
+                    color: chocolate;
+                }
+            </style>
+            
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/kfr5le80/bag/n/h/x/red-32-ltrs-casual-bagpack-school-bag-laptop-backpack-proera-32-original-imafw54z7xncemm9.jpeg?q=50" width="100%" alt="laptop">
+                <div>
+                    <h6 style="padding: 2ox;">Large 35 L </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/k6nxrbk0/backpack/r/6/h/khadi-textured-hi-storage-khadi-textured-laptop-backpack-original-imafp3fprszq79kg.jpeg?q=50" width="100%" alt="METRONAUT
+            Medium 30 L Laptop">
+                <div>
+                    <h6 style="padding: 2ox;">Large 35 L </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/kg9qbgw0/backpack/f/s/w/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-black-original-imafwjxdgxynfwqt.jpeg?q=50" width="100%" alt="PROVOGUE
+            Large 35 L Laptop">
+                <div>
+                    <h6 style="padding: 2px;">Large 35 L </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/k6nxrbk0/backpack/r/6/h/khadi-textured-hi-storage-khadi-textured-laptop-backpack-original-imafp3fprszq79kg.jpeg?q=50" width="100%" alt="METRONAUT
+            Medium 30 L Laptop">
+                <div>
+                    <h6 style="padding: 2ox;">Large 35 L </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg?q=50" width="100%" alt="PROVOGUE
+            Large 35 L Laptop ">
+                <div>
+                    <h6 style="padding: 2ox;">Large 35 L </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/k6ci8i80/backpack/e/z/m/hop9990-299902-laptop-backpack-hp-original-imafcgzxcykzz4eu.jpeg?q=50" width="100%" alt="PROVOGUE
+            Large 35 L Laptop ">
+                <div>
+                    <h6 style="padding: 2ox;">Large 35 L </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/ke1pnrk0/bag/e/f/z/olsk011-ol-skool-30-original-imafute2txpdskjz.jpeg?q=50" width="100%" alt="PROVOGUE
+            Large 35 L Laptop ">
+                <div>
+                    <h6 style="padding: 2ox;">Large 35 L </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+         
+            <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+        </div>
+        <div  style="display: flex; width: 100%; margin: 2%;" >
+            <!-- <style>
+                .cardgroup{
+                    background-color: whitesmoke;
+                    display: block;
+                    overflow-y: hidden;
+                }
+                .cardgroup img{
+                    padding: 2px;
+                    height: 80%;
+                    width: 100%;
+                }
+                /* .cardgroup:hover div,p > :nth-child(odd){
+                    content: "";
+                    zoom: 150%;
+                    position: absolute;
+                    width: 20%;
+                    float: left;
+                    left: 10%;
+                    background-color: rgb(128, 128, 128,.6);
+                    float: left;
+                } */
+                .cardgroup sup,sub,del{
+                    padding: .5%;
+                    color: chocolate;
+                }
+            </style>
+             -->
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/200/200/kn3i1zk0/casserole/k/e/p/cassrole-3-5l-the-wants-original-imagfuynvtjwspkk.jpeg?q=70" width="100%" alt="laptop">
+                <div>
+                    <h6 style="padding: 2ox;">cook and serve casseroles</h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/612/612/ktizdzk0/bed-mattress/m/g/9/normal-top-queen-5-60-72-dual-medium-soft-hard-high-density-hd-original-imag6uxhzskahp7s.jpeg?q=70" width="100%" alt="METRONAUT
+            Medium 30 L Laptop">
+                <div>
+                    <h6 style="padding: 2ox;">SleepX Dual Medium Soft & Hard</h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/612/612/kidgnm80-0/key-chain/z/s/n/rotating-captain-america-shield-keyrings-keychains-key-chain-original-imafy6ty8ankpght.jpeg?q=70" width="100%" alt="PROVOGUE
+            Large 35 L Laptop">
+                <div>
+                    <h6 style="padding: 2px;">eweft Rotating Captain America Shield</h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/612/612/jumzc7k0/key-chain/y/j/m/pu-leather-car-key-wallets-men-key-holder-keys-organizer-covers-original-imafeywtprekf5v8.jpeg?q=70" width="100%" alt="METRONAUT
+            Medium 30 L Laptop">
+                <div>
+                    <h6 style="padding: 2ox;">DALUCI PU Leather</h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/kwb07m80/watch/a/v/e/2-magnet-strap-girls-women-4-point-369-rishtey-black-21st-original-imag9y8hmmepa9cp.jpeg?q=50" width="100%" alt="PROVOGUE
+            Large 35 L Laptop ">
+                <div>
+                    <h6 style="padding: 2ox;">FOXTER
+                        New Arrival </h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                    </p>
+                </div>
+            </div>
+            <div class="cardgroup" >
+                <img src="https://rukminim1.flixcart.com/image/495/594/kcz4rrk0/watch/j/x/y/blue-sports-design-foxter-original-imaftzjrqb8e6dvn.jpeg?q=50" width="100%" alt="PROVOGUE
+            Large 35 L Laptop ">
+                <div>
+                    <h6 style="padding: 2ox;">FOXTER
+                        Chronograph Design</h6>
+                    <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                       
+                        <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                        <button type="button" class="btn btn-primary btn-sm col-5"> <a style="color:white" href="Cart.html"> Add cart</a></button>
+                </div>
+            </div>
+            <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"  alt="flipcart"> -->
+        </div>
+    </section>
+    <footer style="background-color: rgb(61, 90, 90);">
+        <h1 style="text-align: center;" class=""><kbd>Welcome to Our Page</kbd> </h1>
+        <div class="row container-fluid justify-content-between p-2  text-dark border">
+            <div style=" width: 20rem; ">
+                <div class="card-title justify-content-center"><i class="fa-fa-bootstrap"><h5>Shoppie</h5></i></div>
+                <div class=" justify-content-end">
+                    <p>Here we are use bootstrap only litiraly we used css also.</p>
+                </div>
+            </div>
+            <div style=" width: 20rem;  border: none;">
+                <div class="card-title"><h5>Community</h5></div>
+                <ul class="d-flex p-1">
+                    <li class="nav-link"> <a href="Settings.html">settings</a> </li>
+                    <li class="nav-link"> <a href="/Contact.html">contacts</a> </li>
+                    <li class="nav-link"><a href="/Service.html">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
