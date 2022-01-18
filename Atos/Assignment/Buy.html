@@ -21,6 +21,7 @@
             background-color: violet;
         }
     </style>
+    
 </head>
 <body>
     <header>
@@ -64,11 +65,49 @@
     </header>
     <section style="height:80vh" >
         <p class="nav-link text-light">Shoppie <code>></code> Buy</p>
-        <div style="text-align: center;     ">
+        <!-- <div style="text-align: center;     ">
             <div class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
+        </div> -->
+
+        <div class="card container-fluid   text-dark bg- light" style="width:15rem; ">
+            <div class="card-image-top" alt="image">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Clearance/May21/V238940049_IN_PC_BAU_Edit_Creation_Laptops1x._SY304_CB667377205_.jpg" width="100%"></div>
+                <div class="card-body" >
+                    <h4 class="card-title">DESKTOP ASSOSORIES</h4> 
+                <h6 class="card-subtitle mb-2 text-muted">This mine</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+            </div>
+            <div>
+                <button class="btn btn-primary col-4" id="add" onclick="clic()">Add</button> <span id="count" >1</span> <button class="btn btn-danger col-4" onclick="clica()" id="clica()">Delete</button><hr>
+                <button class="btn btn-primary">Buy</button>
+            </div>
         </div>
+        <script>
+            l=1;
+            function clic(){
+                if(l<10){
+                    l+=1;
+                    document.getElementById('count').innerHTML=l;
+                }else{
+                    alert('you may be crossing out of limit ');
+                }
+               
+            }
+            function clica(){
+                if(l>1){
+                    l-=1;
+                    document.getElementById('count').innerText = l;
+                }else{
+                    alert('must have minimum 1 product')
+                }
+            }
+        </script>
+
+
+
+        
     </section>
     
 

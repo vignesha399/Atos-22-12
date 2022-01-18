@@ -20,7 +20,18 @@
         body{
             background-image: url(simon-berger-aZjw7xI3QAA-unsplash\ \(1\).jpg);
         }
+        
     </style>
+     <script>
+        function myFunction(x) {
+          x.style.background = "lightgreen";
+          x.style.color = "black";
+        }
+        function myFunctionn(x){
+            x.style.background = "white";
+        }
+    </script>
+  
 </head>
 <body>
     <header>
@@ -72,48 +83,48 @@
         <form style="width: 50%; margin: auto; border: 1px; border-radius: 1%; padding: 1%;  background-color: rgb(26, 25, 25,.5);" action="">
             <div class="row g-3">
                 <div class="col p-1">
-                  Firstname<input type="text"    class="form-control" placeholder="First name" aria-label="First name">
+                  Firstname<input type="text"  onfocusin="myFunction(this)" onfocusout="myFunctionn(this)"  class="form-control" placeholder="First name" aria-label="First name">
                 </div>
                 <div class="col p-1">
-                  LastName<input type="text"    class="form-control" placeholder="Last name" aria-label="Last name">
+                  LastName<input type="text" onfocusin="myFunction(this)" onfocusout="myFunctionn(this)"   class="form-control" placeholder="Last name" aria-label="Last name">
                 </div>
             </div>
             <div class="row g-3">
                 <div class="col-6 p-1">
-                  E-mail<input    type="email" class="form-control" placeholder="E-mail" aria-label="email">
+                  E-mail<input  onfocusin="myFunction(this)" onfocusout="myFunctionn(this)"  type="email" class="form-control" placeholder="E-mail" aria-label="email">
                 </div>
                 
             </div>
             <div class="row g-3">
                 <div class="col-6 p-1">
-                  Password<input    type="email" class="form-control" placeholder="Password" aria-label="email">
+                  Password<input   minlength="8" autocomplete="off" maxlength="16" onfocusin="myFunction(this)" onfocusout="myFunctionn(this)"  type="email" class="form-control" placeholder="Password" aria-label="email">
                 </div>
                 <div class="col-6 p-1">
-                    Re-type Password<input    type="email" class="form-control" placeholder="Re-type Password" aria-label="email">
+                    Re-type Password<input   minlength="8" autocomplete="off" maxlength="16" onfocusin="myFunction(this)" onfocusout="myFunctionn(this)"  type="email" class="form-control" placeholder="Re-type Password" aria-label="email">
                   </div>
                 
             </div>
             <div class="row g-3">
                 <div class="col-6 p-1">
-                  Mobile<input    type="tel" maxlength="10" class="form-control" placeholder="Mobile" aria-label="Mobile">
+                  Mobile<input  onfocusin="myFunction(this)" onfocusout="myFunctionn(this)"  type="tel" maxlength="10" class="form-control" placeholder="Mobile" aria-label="Mobile">
                 </div>
             </div>
             <fieldset style="border: 1px solid green; padding: 10px;">
                 <legend style="color: white;">Address</legend>
                 <div class="row">
                     <div class="col p-1">
-                        <input type="text"    class="form-control" placeholder="flot no" aria-label="flot no">
+                        <input type="text"  onfocusin="myFunction(this)" onfocusout="myFunctionn(this)"  class="form-control" placeholder="flot no" aria-label="flot no">
                     </div>
                     <div class="col p-1">
-                        <input type="text"    class="form-control" placeholder="Building" aria-label="Building">
+                        <input type="text"   onfocusin="myFunction(this)" onfocusout="myFunctionn(this)" class="form-control" placeholder="Building" aria-label="Building">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col p-1">
-                        <input type="text"    class="form-control" placeholder="city" aria-label="city">
+                        <input type="text"   onfocusin="myFunction(this)" onfocusout="myFunctionn(this)" class="form-control" placeholder="city" aria-label="city">
                     </div>
                     <div class="col p-1">
-                        <input type="text"    class="form-control" placeholder="Landmark" aria-label="First name">
+                        <input type="text"   onfocusin="myFunction(this)" onfocusout="myFunctionn(this)" class="form-control" placeholder="Landmark" aria-label="First name">
                     </div>
                 </div>
                 

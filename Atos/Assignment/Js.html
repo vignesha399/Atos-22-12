@@ -9,16 +9,181 @@
 </head>
 <body>
     <div class="div">Hello world!</div>
+
     <form action="">
         <input type="text" name="age" id="my">
-        <input type="text" name="dog" id="dog">
-        <input type="button" onclick="years (this.form)" name="" id="">
+        <input type="text" name="dog" id="dogy">
+        <button type="button" onclick="years (this.form)" name="" id="">Button</button>
     </form>
     <p id="cli"> helo</p>
-    <p id="copy">helllo maharani</p>
+    <p id="copy" onclick="copy()">helllo maharani</p>
+    <button onclick="copy()"> button </button>
     <p id="paste">v</p>
-    <input type="text" name="cli" id="cl">
-    <input type="button" onclick="clic()" name="click" id="click">
+    <p id="n"></p>
+    <form action="">
+        <p id="coy">im vignesh</p>
+        <input type="text" name="cli" id="cl">
+        <button type="button" /*onclick="getElementById('paste').innerHTML=5" /*onclick="clic(this)" name="click" id="click">Button</button>
+    </form>
+    <p id="cp" onclick="clic()">im vingehs</p>
+    <button > clic</button>
+    <script>
     
+    i = 1;
+    function clic(){
+        var c = document.getElementById('cp').innerText;
+        document.getElementById('paste').innerHTML= c;
+        document.getElementById('copy').innerHTML="drrrrrrrrrrrrrrrrr";
+    }
+    </script>
+
+
+
+
+
+
+
+    <div id="id" style=" display: flex; justify-content: center;">
+        <div class="cardgroup border-1" style="border: 1px solid black; width: 10%; text-align: center;" >
+            <img src="https://rukminim1.flixcart.com/image/495/594/kcz4rrk0/watch/j/x/y/blue-sports-design-foxter-original-imaftzjrqb8e6dvn.jpeg?q=50" width="50%" alt="PROVOGUE
+        Large 35 L Laptop ">
+            <div>
+                <h6 style="padding: 2px;">FOXTER
+                    Chronograph Design</h6>
+                <p style="padding: 2px;"> (Black, Grey) Special price</p>
+                
+                    <sup>₹534</sup><del>₹2,199</del><sub>75% off</sub>
+                    <button type="button" class="btn btn-primary btn-sm col-5" onclick="copy()">Add cart</button>
+                    <div id="para"> helllo </div>
+                    <div id="para1 "> hi</div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div>
+        <p id="p1">hello</p>
+        <button onclick="cop()"> button </button>
+        <p id="p2"></p>
+    </div>
+    <script>
+        function col() {
+            
+        }
+    </script>
+    <script>
+        var a = 'j';
+        a= 8
+        document.getElementById('p1').innerHTML = a;
+        document.write(a);
+        function copy() {
+            var range = document.createRange();
+            range.selectNode(document.getElementById("id"));
+            window.getSelection().removeAllRanges(); // clear current selection
+            window.getSelection().addRange(range); // to select text
+            document.execCommand("paste").getElementById('paste').innerHTML;
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();// to deselect
+        }
+    </script>
+    <p id="no" > 0 </p>
+    <input  type="text">click
+       <script type = "text/javascript">
+          
+             function over() {
+                document.getElementById('para').innerHTML =  ("Mouse Over");
+             }
+             
+             function out() {
+                document.getElementById('para').innerHTML =  ("Mouse \b out");
+             }
+             var a = 0
+             function inc(){
+                 a+=1;
+                 document.getElementById('no').innerHTML = a;
+             }
+             function dec(){
+                 a-=1;
+                 document.getElementById('no').innerHTML = a;
+             }
+
+       </script>
+       
+       <p>Bring your mouse inside the division to see the result:</p>
+       
+       <button onmouseover = "over()" onmouseout = "out()">
+          <h2> This is inside the division </h2>
+       </button>
+        
+ 
+<h2>JavaScript Array Sort</h2>
+<p>Sort the array in descending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo1").innerHTML = points;
+
+points.sort(function(a,b){return a-b});
+document.getElementById("demo2").innerHTML = points;
+</script>
+
+
+<script>
+    (function() {
+    let x = document.getElementById("idName");
+    let y = document.getElementById("liName");
+    
+    y.addEventListener('click', function(e) {
+        y.appendChild(x);
+    });
+
+  
+})();
+</script>
+
+    <p id="idName">TEXT</p>
+    <ul>
+        <li id="liName">
+
+        </li>
+    </ul>
+
+
+    <style>
+        div {
+          background: yellow;
+          border: 1px solid black;
+          padding: 10px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div oncontextmenu="myFunction()" contextmenu="mymenu">
+        <p>Right-click inside this box to see the context menu!
+        
+        <menu type="context" id="mymenu">
+          <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
+          <menu label="Share on...">
+          <menuitem label="Twitter" icon="ico_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+          <menuitem label="Facebook" icon="ico_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+          </menu>
+          <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+        </menu>
+        
+        </div>
+        
+        <script>
+        function myFunction() {
+          alert("You right-clicked inside the div!");
+        }
+        </script>
+        
+        <p><strong>Note:</strong> The contextmenu <strong>attribute</strong> only works in Firefox!</p>
+        
 </body>
 </html>

@@ -70,21 +70,41 @@
     <div class="d-grid gap-2 col-6 mx-auto m-5">
         <button class="btn btn-info" type="button"> Login</button>
     </div>
-    <form style="width: 400px; border: 1px; border-radius: 5%; text-align: center; margin: auto; height: 50%; padding: 1%; background-color: rgba(22, 19, 19, 0.3); ">
+    <form style="width: 400px; border: 1px; border-radius: 5%; text-align: center; margin: auto; height: 50%; padding: 1%; background-color: rgb(252, 248, 248,0.6); ">
         <div>
             <div>
                 <label for="email">Email</label>
-                <input type="text" id="email"   class="form-control" placeholder="E-mail" aria-label="First name">
+                <input type="text" id="email" autocomplete="off" onfocusin="myFunction(this)" onfocusout="myFunctionn(this)" class="form-control" placeholder="E-mail" aria-label="First name">
             </div>
             <div class=" p-1">
-              <label for="pass">Password</label><input type="text" id="pass"   class="form-control" placeholder="Password" aria-label="Last name">
+
+              <label for="pass">Password</label>
+              <input  type="text" id="pass" minlength="8" autocomplete="off" maxlength="16" onfocusin="myFunction(this)" onfocusout="myFunctionn(this)" class="form-control" placeholder="Password" aria-label="Password" onclick="login(this)">
+              <p id="p"></p>
+                <script>
+                    function myFunction(x) {
+                      x.style.background = "lightgreen";
+                      x.style.color = "white";
+                      var a = 'password';
+                    }
+                    function myFunctionn(x){
+                        x.style.background = "white";
+                    }
+                    function login(x){
+                        var a = 'Password must contain minimum 8 charactor and maximum 16 charactor';
+                        x.document.getElementById('p').innerHTML = a;
+                    }
+                </script>
             </div>
-        </div> 
-        <div class="row gap-2 col-2 mx-auto"> 
-            <button type="button" class="btn btn-primary btn-sm"><a style="color:aqua; text-decoration: none;" href="Shoppie.html">Login</a> </button>
-            <button type="button" class="btn btn-secondary btn-sm"><a style="color:aqua; text-decoration: none;" href="SignUp.html">SignUp </a> </button>
-            <a style="color: wheat;  position: absolute; top: 60%; left: 60%; transform: translate(-50%, -50%); color: white; " href="Buy.html">forget? Password</a>
         </div>
+         
+        <div class="row gap-2 col-2 mx-auto"> 
+            <button type="button" class="btn btn-primary btn-sm"><a style="color:aqua; text-decoration: none;" href="Shoppie.html" >Login</a> </button>
+            <button type="button" class="btn btn-secondary btn-sm"><a style="color:aqua; text-decoration: none;" href="SignUp.html">SignUp </a> </button>
+            <!-- <span></span><a style="color: wheat;  position: absolute; top: 60%; left: 60%; transform: translate(-50%, -50%); color: white; " href="Buy.html"  >forget? Password</a></span> -->
+            
+        </div>
+        
     </form>
 </section>
 </body>

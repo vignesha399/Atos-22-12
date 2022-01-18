@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "com.example.App",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "Maven.demo.src.main.java.com.example.App",
+            "projectName": "Atos-22-12_6a094ab3"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "com.example.App",
+            "projectName": "Atos-22-12_6a094ab3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Practice",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "Atos-22-12_6a094ab3"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectClass",
+            "request": "launch",
+            "mainClass": "ObjectClass",
+            "projectName": "Atos-22-12_6a094ab3"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

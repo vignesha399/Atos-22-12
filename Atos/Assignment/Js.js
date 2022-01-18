@@ -25,25 +25,27 @@ function myfucntion(){
     // }
 }
 
-a  = "heb"
-var id = document.getElementsByClassName('div');
-document.write(a );
-document.writeln("write");
+
 function years (form){
     form.dog.value = form.age.value * 7;
 }
-l = 1;
-function clic(){
-    // document.getElementById('cli').innerHTML = "hello";
-    document.getElementById('copy').value = document.getElementById('copy');
-    // document.write(a);
-    var c = " Hello";
-    var d = " Hello";
-    // document.getElementById('copy').innerHTML = d.length;
-    if(c==d){
-        return true;
-    }else{
-        return false;
+i = 1;
+function clic(x){
+    var z = x;
+    document.getElementById('paste').innerHTML= z;
+
+}
+function clica(){
+    if(i>1){
+        i-=1;
+    document.getElementById('count').innerHTML= i;
     }
-} 
-   
+}
+function copy(){
+    document.getElementById('copy').innerHTML = "hello";
+}
+function clone(){
+    var clone = document.getElementById("para1");
+    var cln = clone.cloneNode(true);
+    document.getElementById("para").append(cln);
+}
