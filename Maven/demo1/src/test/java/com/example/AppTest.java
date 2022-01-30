@@ -10,18 +10,14 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
     public void app(int a, int b) {
-        assertEquals(6, (a+b));   
+        assertEquals(6, App.add(3, 3));
+        assertTrue(App.mul(3, 3) > 0);
+        assertEquals(1, App.div(3, 3));
+        assertEquals(0, App.sub(3, 3));
     }
-    public void Double(int a, int b) {
-        assertEquals(47, (a+b));
-    }
+    
+
+    
 }
